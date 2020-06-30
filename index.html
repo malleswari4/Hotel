@@ -29,10 +29,8 @@
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 </ul>
-                <span class="navbar-text">
-                    <a href="" data-toggle="modal" data-target="#loginModal">
-                        <span class="fa fa-sign-in"></span>Login
-                    </a>
+                <span class="navbar-text" id="login">
+                    <span class="fa fa-sign-in"></span>Login
                 </span>
             </div>   
         </div>
@@ -162,7 +160,7 @@
                     <img src="img/logo.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a href="" data-toggle="modal" data-target="#reservemodal"><button class="btn btn-block btn-warning text-white" role="button">Reserve Table</button></a>
+                    <button class="btn btn-block btn-warning text-white" role="button" id="reserve">Reserve Table</button>
                 </div>
             </div>
         </div>
@@ -207,14 +205,9 @@
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
-                    <div class="btn-group" id="carouselButton">
-                        <button class="btn btn-danger btn-sm " id="corousel-pause">
-                            <span class="fa fa-pause"></span>
-                        </button>
-                        <button class="btn btn-danger btn-sm " id="corousel-play">
-                            <span class="fa fa-play"></span>
-                        </button>
-                    </div>
+                    <button class="btn btn-danger btn-sm " id="carouselButton">
+                        <span class="fa fa-pause"></span>
+                    </button>
                 </div>
             </div>
 
@@ -373,17 +366,7 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
     </script>-->
-    <script>
-        $(document).ready(function(){
-            $('#mycarousel').carousel({interval:2000})
-            $('#carousel-pause').click(function(){
-                $('#mycarousel').carousel('pause');
-            });
-            $('#carousel-play').click(function(){
-                $('#mycarousel').carousel('cycle');
-            });
-        })
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
